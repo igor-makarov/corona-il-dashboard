@@ -7,6 +7,7 @@ layout: page
 
 {% assign data = site.data.data %}
 
+<div dir="rtl">
 <center><h4><a href="https://govextra.gov.il/ministry-of-health/corona/corona-virus">{{ data['timestamp'] }}</a></h4></center>
 
 <style>
@@ -21,8 +22,8 @@ table {
 
 <table>
   <tr>
-    <th>total</th>
-    <th>new</th>
+    <th>מקרים מאומתים</th>
+    <th>מקרים חדשים</th>
   </tr>
   <tr>
     <td>{{ data['total_cases'] }}</td>
@@ -32,22 +33,22 @@ table {
 
 <table>
   <tr>
-    <th>easy</th>
-    <th>medium</th>
-    <th>hard</th>
+    <th>קל</th>
+    <th>בינוני</th>
+    <th>קשה</th>
   </tr>
   <tr>
     <td>{{ data['easy'] }}</td>
     <td>{{ data['medium'] }}</td>
-    <td>{{ data['hard'] }} ({{ data['ventilated'] }} ventilated) </td>
+    <td>{{ data['hard'] }} ({{ data['ventilated'] }} מתוכם מונשמים) </td>
   </tr>
 </table>
 
 <table>
   <tr>
-    <th>hospitalized</th>
-    <th>home_care</th>
-    <th>hotel</th>
+    <th>מאושפזים</th>
+    <th>אשפוז בית</th>
+    <th>אשפוז מלונית</th>
   </tr>
   <tr>
     <td>{{ data['hospitalized'] }}</td>
@@ -59,11 +60,13 @@ table {
 
 <table>
   <tr>
-    <th>deceased</th>
-    <th>recovered</th>
+    <th>נפטרו</th>
+    <th>החלימו</th>
   </tr>
   <tr>
     <td>{{ data['deceased'] }}</td>
     <td>{{ data['recovered'] }}</td>
   </tr>
 </table>
+
+</div>
