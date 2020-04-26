@@ -17,6 +17,7 @@ table {
   table-layout: fixed;
   width: 100%;
   text-align: center;
+  margin-bottom: 10pt;
 }
 </style>
 
