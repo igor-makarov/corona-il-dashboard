@@ -7,7 +7,7 @@ layout: page
 
 {% assign data = site.data.data %}
 
-<center><h4>{{ data['timestamp'] }}</h4></center>
+<center><h4><a href="https://govextra.gov.il/ministry-of-health/corona/corona-virus">{{ data['timestamp'] }}</a></h4></center>
 
 <style>
 table {
