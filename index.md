@@ -19,6 +19,11 @@ table {
   text-align: center;
   margin-bottom: 10pt;
 }
+
+table.owid-charts td {
+  padding: 0px;
+}
+
 </style>
 
 <table>
@@ -69,5 +74,27 @@ table {
     <td>{{ data['recovered'] }}</td>
   </tr>
 </table>
+
+<center><h4><a href="https://ourworldindata.org/coronavirus">גרפים מהאתר Our World In Data</a></h4></center>
+
+<table class="owid-charts">
+  <tr>
+    <th>מקרים מאומתים חדשים — ממוצע תלת-יומי</th>
+    <th>בדיקות שהתבצעו — ממוצע תלת-יומי</th>
+  </tr>
+  <tr>
+    <td><iframe src="https://ourworldindata.org/grapher/daily-covid-cases-3-day-average?time=2020-03-01..&country=ISR" style="width: 100%; height: 400px; border: 0px none;"></iframe></td>
+    <td><iframe src="https://ourworldindata.org/grapher/daily-covid-19-tests-rolling-3-day-average?time=2020-03-01..&country=ISR" style="width: 100%; height: 400px; border: 0px none;"></iframe></td>
+  </tr>
+  <tr>
+    <th>מקרים מאומתים</th>
+    <th>נפטרים</th>
+  </tr>
+  <tr>
+    <td><iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?time=2020-03-01..&country=ISR" style="width: 100%; height: 400px; border: 0px none;"></iframe></td>
+    <td><iframe src="https://ourworldindata.org/grapher/total-deaths-covid-19?time=2020-03-01..&country=ISR" style="width: 100%; height: 400px; border: 0px none;"></iframe></td>
+  </tr>
+</table>
+
 
 </div>
