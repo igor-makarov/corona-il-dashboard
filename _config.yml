@@ -18,7 +18,7 @@ title: קורונה בישראל
 description: >-
   נתונים רשמיים של משרד הבריאות - בפורמט נגיש
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://corona-il-dash.netlify.app"
 twitter_username: 
 github_username:  
 
