@@ -17,7 +17,7 @@ table {
   table-layout: fixed;
   width: 100%;
   text-align: center;
-  margin-bottom: 10pt;
+  margin-bottom: 5pt;
 }
 
 table.owid-charts td {
