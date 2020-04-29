@@ -63,7 +63,6 @@ table.owid-charts td {
   </tr>
 </table>
 
-
 <table>
   <tr>
     <th>נפטרו</th>
@@ -72,6 +71,17 @@ table.owid-charts td {
   <tr>
     <td>{{ data['deceased'] }}</td>
     <td>{{ data['recovered'] }}</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>אחוז התמותה למקרים שתוצאתם ידועה (CFR)</th>
+  </tr>
+  <tr>
+    <td>
+    <span style="color: red;">{{ data['cfr'] }}%</span>
+    </td>
   </tr>
 </table>
 
