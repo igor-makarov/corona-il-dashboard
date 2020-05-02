@@ -5,10 +5,12 @@
 layout: page
 ---
 
+<script async src="/loader.js"></script>
+
 {% assign data = site.data.data %}
 
 <div dir="rtl">
-<center><h4><a href="https://govextra.gov.il/ministry-of-health/corona/corona-virus">{{ data['timestamp'] }}</a></h4></center>
+<center><h4><a href="https://govextra.gov.il/ministry-of-health/corona/corona-virus"><span class="data_cell" id="timestamp">{{ data['timestamp'] }}</span></a></h4></center>
 
 <style>
 table {
@@ -32,8 +34,8 @@ table.owid-charts td {
     <th>מקרים חדשים</th>
   </tr>
   <tr>
-    <td>{{ data['total_cases'] }}</td>
-    <td>{{ data['new_cases'] }}</td>
+    <td class="data_cell" id="total_cases">{{ data['total_cases'] }}</td>
+    <td class="data_cell" id="new_cases">{{ data['new_cases'] }}</td>
   </tr>
 </table>
 
@@ -44,9 +46,9 @@ table.owid-charts td {
     <th>קשה</th>
   </tr>
   <tr>
-    <td>{{ data['easy'] }}</td>
-    <td>{{ data['medium'] }}</td>
-    <td>{{ data['hard'] }} ({{ data['ventilated'] }} מתוכם מונשמים) </td>
+    <td class="data_cell" id="easy">{{ data['easy'] }}</td>
+    <td class="data_cell" id="medium">{{ data['medium'] }}</td>
+    <td><span class="data_cell" id="hard">{{ data['hard'] }}</span> (<span class="data_cell" id="ventilated">{{ data['ventilated'] }}</span> מתוכם מונשמים) </td>
   </tr>
 </table>
 
@@ -57,9 +59,9 @@ table.owid-charts td {
     <th>אשפוז מלונית</th>
   </tr>
   <tr>
-    <td>{{ data['hospitalized'] }}</td>
-    <td>{{ data['home_care'] }}</td>
-    <td>{{ data['hotel'] }}</td>
+    <td class="data_cell" id="hospitalized">{{ data['hospitalized'] }}</td>
+    <td class="data_cell" id="home_care">{{ data['home_care'] }}</td>
+    <td class="data_cell" id="hotel">{{ data['hotel'] }}</td>
   </tr>
 </table>
 
@@ -69,8 +71,8 @@ table.owid-charts td {
     <th>החלימו</th>
   </tr>
   <tr>
-    <td>{{ data['deceased'] }}</td>
-    <td>{{ data['recovered'] }}</td>
+    <td class="data_cell" id="deceased">{{ data['deceased'] }}</td>
+    <td class="data_cell" id="recovered">{{ data['recovered'] }}</td>
   </tr>
 </table>
 
@@ -80,7 +82,7 @@ table.owid-charts td {
   </tr>
   <tr>
     <td>
-    <span style="color: red;">{{ data['cfr'] }}%</span>
+    <span style="color: red;"><span class="data_cell" id="cfr">{{ data['cfr'] }}</span>%</span>
     </td>
   </tr>
 </table>
