@@ -5,8 +5,6 @@
 layout: page
 ---
 
-<script async src="/loader.js"></script>
-
 {% assign data = site.data.data %}
 
 <div dir="rtl">
