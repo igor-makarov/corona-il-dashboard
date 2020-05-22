@@ -39,6 +39,28 @@ table.owid-charts td {
 
 <table>
   <tr>
+    <th>נפטרו</th>
+    <th>החלימו</th>
+  </tr>
+  <tr>
+    <td class="data_cell" id="deceased">{{ data['deceased'] }}</td>
+    <td class="data_cell" id="recovered">{{ data['recovered'] }}</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>אחוז התמותה למקרים שתוצאתם ידועה (CFR)</th>
+  </tr>
+  <tr>
+    <td>
+    <span style="color: red;"><span class="data_cell" id="cfr">{{ data['cfr'] }}</span>%</span>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
     <th>קל</th>
     <th>בינוני</th>
     <th>קשה</th>
@@ -60,28 +82,6 @@ table.owid-charts td {
     <td class="data_cell" id="hospitalized">{{ data['hospitalized'] }}</td>
     <td class="data_cell" id="home_care">{{ data['home_care'] }}</td>
     <td class="data_cell" id="hotel">{{ data['hotel'] }}</td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th>נפטרו</th>
-    <th>החלימו</th>
-  </tr>
-  <tr>
-    <td class="data_cell" id="deceased">{{ data['deceased'] }}</td>
-    <td class="data_cell" id="recovered">{{ data['recovered'] }}</td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th>אחוז התמותה למקרים שתוצאתם ידועה (CFR)</th>
-  </tr>
-  <tr>
-    <td>
-    <span style="color: red;"><span class="data_cell" id="cfr">{{ data['cfr'] }}</span>%</span>
-    </td>
   </tr>
 </table>
 
