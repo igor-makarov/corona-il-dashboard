@@ -75,13 +75,14 @@ table.owid-charts td {
 <table>
   <tr>
     <th>מאושפזים</th>
-    <th>אשפוז בית</th>
-    <th>אשפוז מלונית</th>
+    <th>אשפוז בית ומלונית</th>
+    <!-- <th>אשפוז בית</th> -->
+    <!-- <th>אשפוז מלונית</th> -->
   </tr>
   <tr>
     <td class="data_cell" id="hospitalized">{{ data['hospitalized'] }}</td>
     <td class="data_cell" id="home_care">{{ data['home_care'] }}</td>
-    <td class="data_cell" id="hotel">{{ data['hotel'] }}</td>
+    <!-- <td class="data_cell" id="hotel">{{ data['hotel'] }}</td> -->
   </tr>
 </table>
 
